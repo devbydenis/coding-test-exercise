@@ -1,6 +1,8 @@
 package main
 
 import (
+	// "fmt"
+	"coding-exercise-golang/test"
 	"fmt"
 )
 
@@ -8,19 +10,24 @@ func main() {
 	// ======================================================================
 	// Two Sum
 	// ======================================================================
-	var nums []int = []int{2, 7, 11, 15}
-	var target int = 9
-	fmt.Println(TwoSum(nums, target))
+	// var nums []int = []int{2, 7, 11, 15}
+	// var target int = 9
+	// fmt.Println(TwoSum(nums, target))
 
 	// ======================================================================
 	// Valid Parentheses
 	// ======================================================================
-	var s string = "()[]{}"
-	fmt.Println(IsValid(s))
+	// var s string = "()[]{}"
+	// fmt.Println(IsValid(s))
 
 	// ======================================================================
 	// Running Sum of 1d Array
 	// ======================================================================
 	
-	fmt.Println(RunningSum(nums))
+	// fmt.Println(RunningSum(nums))
+
+	// ======================================================================
+	// Palindrom Number
+	// ======================================================================
+	fmt.Println(test.PalindromNumber(12321))
 }

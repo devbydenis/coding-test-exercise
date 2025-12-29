@@ -1,4 +1,4 @@
-package main
+package test
 
 func TwoSum(nums []int, target int) []int {
 	numMap := make(map[int]int) // Buat map: key: angka, value: indeks

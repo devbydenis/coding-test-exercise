@@ -1,4 +1,4 @@
-package main
+package test
 
 func BestTimeToBuyAndSellStock() int {
 	prices := []int{7,1,5,3,6,4}

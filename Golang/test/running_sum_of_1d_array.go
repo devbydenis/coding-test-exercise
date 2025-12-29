@@ -1,4 +1,4 @@
-package main
+package test
 
 func RunningSum(nums []int) []int { // [1,2,3,4]
 	var result []int

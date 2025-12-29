@@ -1,4 +1,4 @@
-package main
+package test
 
 func IsValid(s string) bool {
 	match := map[rune]rune{ // Map untuk cocokin kurung tutup -> kurung buka
