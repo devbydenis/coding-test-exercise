@@ -35,31 +35,3 @@ func LengthOfLongestSubstring(s string) int { //  p w w k e w
 
 // unique? -> expand
 // duplicate? -> shrink
-
-func findMaxSum(nums []int, k int) int { // 2, 1, 5, 1, 3, 2
-	if len(nums) < k {
-		return 0
-	}
-
-	currentWindowSum := 0
-	maxSum := 0 // 8
-
-	// 1. Itung jumlah jendela pertama (0 sampe k-1)
-	for i := 0; i < k; i++ {
-		currentWindowSum += nums[i]
-	}
-	maxSum = currentWindowSum
-
-	// 2. Mulai "Sliding" atau geser jendelanya
-	for i := k; i < len(nums); i++ {
-		// Tambahin elemen baru (kanan), kurangin elemen lama (kiri)
-		currentWindowSum += nums[i] - nums[i-k]
-
-		// Update maxSum kalau nemu yang lebih gede
-		if currentWindowSum > maxSum {
-			maxSum = currentWindowSum
-		}
-	}
-
-	return maxSum
-}
