@@ -4,9 +4,16 @@ import (
 	// "fmt"
 	"coding-exercise-golang/test"
 	"fmt"
+	"time"
 )
 
 func main() {
+	start := time.Now()
+	defer func () {
+		fmt.Printf("Runtime: %v", time.Since(start))
+	}()
+
+
 	// ======================================================================
 	// Two Sum
 	// ======================================================================
@@ -30,4 +37,10 @@ func main() {
 	// Palindrom Number
 	// ======================================================================
 	fmt.Println(test.PalindromNumber(12321))
+	
+	// ======================================================================
+	// Contain Duplicate
+	// ======================================================================
+	// fmt.Println(test.ContainDuplicate([]int{1, 2, 3, 4, 1}))
+	// fmt.Println(test.ContainDuplicate([]int{1, 2, 3, 4}))
 }
