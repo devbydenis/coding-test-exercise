@@ -36,11 +36,17 @@ func main() {
 	// ======================================================================
 	// Palindrom Number
 	// ======================================================================
-	fmt.Println(test.PalindromNumber(12321))
+	// fmt.Println(test.PalindromNumber(12321))
 	
 	// ======================================================================
 	// Contain Duplicate
 	// ======================================================================
 	// fmt.Println(test.ContainDuplicate([]int{1, 2, 3, 4, 1}))
 	// fmt.Println(test.ContainDuplicate([]int{1, 2, 3, 4}))
+	
+	// ======================================================================
+	// Valid Palindrome
+	// ======================================================================
+	fmt.Println(test.ValidPalindrome("bahlil anjing"))
+	fmt.Println(test.ValidPalindrome("Kasur rusak"))
 }
