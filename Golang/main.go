@@ -9,10 +9,9 @@ import (
 
 func main() {
 	start := time.Now()
-	defer func () {
+	defer func() {
 		fmt.Printf("Runtime: %v", time.Since(start))
 	}()
-
 
 	// ======================================================================
 	// Two Sum
@@ -30,23 +29,34 @@ func main() {
 	// ======================================================================
 	// Running Sum of 1d Array
 	// ======================================================================
-	
+
 	// fmt.Println(RunningSum(nums))
 
 	// ======================================================================
 	// Palindrom Number
 	// ======================================================================
 	// fmt.Println(test.PalindromNumber(12321))
-	
+
 	// ======================================================================
 	// Contain Duplicate
 	// ======================================================================
 	// fmt.Println(test.ContainDuplicate([]int{1, 2, 3, 4, 1}))
 	// fmt.Println(test.ContainDuplicate([]int{1, 2, 3, 4}))
-	
+
 	// ======================================================================
 	// Valid Palindrome
 	// ======================================================================
-	fmt.Println(test.ValidPalindrome("bahlil anjing"))
-	fmt.Println(test.ValidPalindrome("Kasur rusak"))
+	// fmt.Println(test.ValidPalindrome("bahlil anjing"))
+	// fmt.Println(test.ValidPalindrome("Kasur rusak"))
+
+	// ======================================================================
+	// Longest Substring Without Repeating Characters
+	// ======================================================================
+	fmt.Println(test.LengthOfLongestSubstring(""))
+	fmt.Println(test.LengthOfLongestSubstring(" "))
+	fmt.Println(test.LengthOfLongestSubstring("bbbbbbb"))
+	fmt.Println(test.LengthOfLongestSubstring("pwwkew"))
+	fmt.Println(test.LengthOfLongestSubstring("abcabcbb"))
+	fmt.Println(test.LengthOfLongestSubstring("bcbbaxn"))
+	fmt.Println(test.LengthOfLongestSubstring("pww"))
 }
