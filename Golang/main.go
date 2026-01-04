@@ -52,11 +52,20 @@ func main() {
 	// ======================================================================
 	// Longest Substring Without Repeating Characters
 	// ======================================================================
-	fmt.Println(test.LengthOfLongestSubstring(""))
-	fmt.Println(test.LengthOfLongestSubstring(" "))
-	fmt.Println(test.LengthOfLongestSubstring("bbbbbbb"))
-	fmt.Println(test.LengthOfLongestSubstring("pwwkew"))
-	fmt.Println(test.LengthOfLongestSubstring("abcabcbb"))
-	fmt.Println(test.LengthOfLongestSubstring("bcbbaxn"))
-	fmt.Println(test.LengthOfLongestSubstring("pww"))
+	// fmt.Println(test.LengthOfLongestSubstring(""))
+	// fmt.Println(test.LengthOfLongestSubstring(" "))
+	// fmt.Println(test.LengthOfLongestSubstring("bbbbbbb"))
+	// fmt.Println(test.LengthOfLongestSubstring("pwwkew"))
+	// fmt.Println(test.LengthOfLongestSubstring("abcabcbb"))
+	// fmt.Println(test.LengthOfLongestSubstring("bcbbaxn"))
+	// fmt.Println(test.LengthOfLongestSubstring("pww"))
+
+	// ======================================================================
+	// Fibonacci Number
+	// ======================================================================
+	fmt.Println(test.Fib(2))
+	fmt.Println(test.Fib(3))
+	fmt.Println(test.Fib(4))
+	// fmt.Println(test.Fib(10))
+	// ======================================================================
 }
