@@ -1,7 +1,6 @@
 package main
 
 import (
-	// "fmt"
 	"coding-exercise-golang/test"
 	"fmt"
 	"time"
@@ -63,9 +62,30 @@ func main() {
 	// ======================================================================
 	// Fibonacci Number
 	// ======================================================================
-	fmt.Println(test.Fib(2))
-	fmt.Println(test.Fib(3))
-	fmt.Println(test.Fib(4))
+	// fmt.Println(test.Fib(2))
+	// fmt.Println(test.Fib(3))
+	// fmt.Println(test.Fib(4))
 	// fmt.Println(test.Fib(10))
 	// ======================================================================
+
+	// ======================================================================
+	// Maximum Depth of Binary Tree
+	// ======================================================================
+	root := test.TreeNode{
+		Val: 10,
+		Left: &test.TreeNode{
+			Val: 2,
+		},
+		Right: &test.TreeNode{
+			Val: 3,
+			Right: &test.TreeNode{
+				Val: 3,
+			},
+			Left: &test.TreeNode{
+				Val: 2,
+			},
+		},
+	}
+
+	fmt.Println(test.MaximumDepthOfBinaryTree(&root))
 }
