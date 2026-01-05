@@ -71,21 +71,46 @@ func main() {
 	// ======================================================================
 	// Maximum Depth of Binary Tree
 	// ======================================================================
-	root := test.TreeNode{
-		Val: 10,
-		Left: &test.TreeNode{
+	// root := test.TreeNode{
+	// 	Val: 10,
+	// 	Left: &test.TreeNode{
+	// 		Val: 2,
+	// 	},
+	// 	Right: &test.TreeNode{
+	// 		Val: 3,
+	// 		Right: &test.TreeNode{
+	// 			Val: 3,
+	// 		},
+	// 		Left: &test.TreeNode{
+	// 			Val: 2,
+	// 		},
+	// 	},
+	// }
+
+	// fmt.Println(test.MaximumDepthOfBinaryTree(&root))
+
+	// ======================================================================
+	// Same Tree
+	// ======================================================================
+	p := test.TreeNode{
+		Val: 1,
+		Right: &test.TreeNode{
 			Val: 2,
 		},
-		Right: &test.TreeNode{
+		Left: &test.TreeNode{
 			Val: 3,
-			Right: &test.TreeNode{
-				Val: 3,
-			},
-			Left: &test.TreeNode{
-				Val: 2,
-			},
 		},
 	}
 
-	fmt.Println(test.MaximumDepthOfBinaryTree(&root))
+	q := test.TreeNode{
+		Val: 1,
+		Right: &test.TreeNode{
+			Val: 2,
+		},
+		Left: &test.TreeNode{
+			Val: 3,
+		},
+	}
+	
+	fmt.Println(test.SameTree(&p, &q))
 }
